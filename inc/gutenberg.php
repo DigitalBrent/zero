@@ -74,3 +74,10 @@ function zero_theme_default_colors() {
 }
 
 add_action( 'init', 'zero_theme_default_colors' );
+
+function zero_custom_blocks() {
+    wp_register_script( 'custom-cta-js', get_templat_directory_uri() . '/js/gutenberg-cta-block.js', array() )
+    register_block_type('zero/custom-cta', array(
+        'editor_script' => 'custom-cta-js'
+    ));
+}
