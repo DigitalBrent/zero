@@ -81,3 +81,5 @@ function zero_custom_blocks() {
         'editor_script' => 'custom-cta-js'
     ));
 }
+
+add_action( 'init', 'zero_custom_blocks' );
