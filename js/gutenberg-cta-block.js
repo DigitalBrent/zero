@@ -1,3 +1,5 @@
+const { registerBlockType } = wp.blocks;
+
 registerBlockType('zero/custom-cta', {
     // built in attributes
     title: 'Call to Action',
