@@ -14,7 +14,7 @@ registerBlockType('zero/custom-cta', {
 
     // built-in functions
     edit() {
-        return <div>I am not enjoying this level of confusion!</div>;
+        return <div>This is some BS!</div>;
     },
 
     save() {}
