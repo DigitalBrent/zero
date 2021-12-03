@@ -76,7 +76,8 @@ function zero_theme_default_colors() {
 add_action( 'init', 'zero_theme_default_colors' );
 
 function zero_custom_blocks() {
-    wp_register_script( 'custom-cta-js', get_template_directory_uri() . '/build/index.js', array( 'wp-blocks' ) );
+    wp_register_script( 'custom-cta-js', get_template_directory_uri() . '/build/index.js', array( 'wp-blocks', 'wp-editor', 'wp-components' ) );
+
     register_block_type('zero/custom-cta', array(
         'editor_script' => 'custom-cta-js'
     ));
